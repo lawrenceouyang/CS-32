@@ -1,0 +1,39 @@
+Lawrence Ouyang
+504128219
+
+Unfortunately, I did not manage to complete my search function. The Search criteria
+is fully operational, however the sort is not. Parts of my sort code are incomplete,
+but are still in the source code.
+
+To my knowledge, all MultiMap and Database functions comply with the time complexity
+requirements for the project.
+
+MultiMap::findEqual(string key)
+
+set iterator to root node
+repeatedly while iterator is in valid state:
+	if iterator's key is equal to key, return iterator
+	otherwise, if iterator's key is greather than key, move iterator to next element
+	otherwise, if iterator's key is less than key, move iterator to previous element
+
+otherwise, return the iterator, which at this point should be in an invalid state
+
+
+MultiMap::Iterator::next()
+
+if iterator is not valid return false
+
+if the node's right node is not invalid
+while the node's right child is not invalid
+move the iterator to point to the rightmost node
+if at any point the node and its parent are equal, return true
+
+while the node's left child is not invalid
+move the iterator to point to the leftmost node
+return true
+
+while the node's parent is not invalid
+
+if the parent node is greather than the iterator's node
+set the iterator's node to the parent node
+otherwise set the iterator's node to the parent node and return true

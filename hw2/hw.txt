@@ -1,0 +1,35 @@
+2. Order of Stack
+
+1.(6,4)
+2.(6,5)
+3.(7,5)
+4.(8,5)
+5.(8,6)
+6.(8,7)
+7.(8,8)
+8.(7,8)
+9.(6,6)
+10.(5,4)
+11.(4,4)
+
+4. Order of Queue
+
+1.(6,4)
+2.(5,4)
+3.(6,5)
+4.(4,4)
+5.(6,6)
+6.(7,5)
+7.(3,4)
+8.(4,5)
+9.(8,5)
+10.(2,4)
+11.(4,6)
+
+The difference in solving this maze with a stack/queue is the order of directions
+in which the maze travels through. In the stack, the loop travels by examining the
+most recent point of interest which is on top of the stack. This means that the
+stack direction will aim for exploring as much of one direction as possible before
+moving on to the next. Queues on the other hand place the next point of interest
+at the end of the queue. This means that all points of interest will be explored
+in the order they were found. 
